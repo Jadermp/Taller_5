@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller #5</title>
+    <script src="js/utildiades.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <script>
+
+        var divPrincipal = crearElemento("div");
+
+        //div contenedor de arriba
+        var divFlexContenedorArriba = crearElemento("div");
+        divFlexContenedorArriba.classList.add("flexContendor","divFlexContenedorArriba");
+
+        var divUno = crearElemento("div");
+        divUno.classList.add("divUnoDosTresCuatro");
+        var divDos = crearElemento("div");
+        divDos.classList.add("divUnoDosTresCuatro");
+        var divTres = crearElemento("div");
+        divTres.classList.add("divUnoDosTresCuatro");
+        var divCuatro = crearElemento("div");
+        divCuatro.classList.add("divUnoDosTresCuatro");
+
+        var imgUno = crearImagen("recursos/img/1.jpg");
+        imgUno.classList.add("imgArriba");
+        var imgDos = crearImagen("recursos/img/2.jpg");
+        imgDos.classList.add("imgArriba");
+        var imgTres = crearImagen("recursos/img/3.webp");
+        imgTres.classList.add("imgArriba");
+        var imgCuatro = crearImagen("recursos/img/4.avif");
+        imgCuatro.classList.add("imgArriba");
+
+        //div contenedor de abajo
+        var divFlexContenedorAbajo = crearElemento("div");
+        divFlexContenedorAbajo.classList.add("flexContendor","divFlexContenedorAbajo");
+        
+        var divCinco = crearElemento("div");
+        divCinco.classList.add("divCincoSiete");
+        var divSeis = crearElemento("div");
+        divSeis.classList.add("divSeis");
+        var divSiete = crearElemento("div");
+        divSiete.classList.add("divCincoSiete");
+        var divOcho = crearElemento("div");
+        divOcho.classList.add("divOcho");
+        var divNueve = crearElemento("div");
+        divNueve.classList.add("divNueve");
+
+        var imgCinco = crearImagen("recursos/img/5.jpg");
+        imgCinco.classList.add("imgCinco");
+        var imgOcho = crearImagen("recursos/img/6.jpg");
+        imgOcho.classList.add("imgOcho");
+        var imgNueve = crearImagen("recursos/img/7.webp");
+        imgNueve.classList.add("imgNueve");
+
+        //
+        var h2 = crearElementoContexto("h2","Book a Session");
+        var fomulario = crearElemento("form");
+        var input1 = crearElemento("input");
+        var input2 = crearElemento("input");
+        var textArea = crearElemento("textarea");
+        var boton = crearElemento("button");
+        boton.textContent = "Enviar";
+
+        //ADICION DE ELEMENTOS
+        //Arriba
+        adicionarHijo(divPrincipal, divFlexContenedorArriba);
+        adicionarHijo(divFlexContenedorArriba, divUno);
+        adicionarHijo(divFlexContenedorArriba, divDos);
+        adicionarHijo(divFlexContenedorArriba, divTres);
+        adicionarHijo(divFlexContenedorArriba, divCuatro);
+        adicionarHijo(divUno, imgUno);
+        adicionarHijo(divDos, imgDos);
+        adicionarHijo(divTres, imgTres);
+        adicionarHijo(divCuatro, imgCuatro);
+
+        //Abajo
+        adicionarHijo(divPrincipal, divFlexContenedorAbajo);
+        adicionarHijo(divFlexContenedorAbajo,divCinco);
+        adicionarHijo(divFlexContenedorAbajo,divSeis);        
+        adicionarHijo(divFlexContenedorAbajo,divSiete); 
+        adicionarHijo(divSeis,divOcho);
+        adicionarHijo(divSeis,divNueve);
+
+        adicionarHijo(divCinco,imgCinco);
+        adicionarHijo(divOcho,imgOcho);
+        adicionarHijo(divNueve,imgNueve);
+
+        adicionarHijo(divSiete,h2);
+        adicionarHijo(divSiete,fomulario);
+        adicionarHijo(fomulario,input1);
+        adicionarHijo(fomulario,input2);
+        adicionarHijo(fomulario,textArea);
+        adicionarHijo(fomulario,boton);
+
+        adicionarBody(divPrincipal);
+
+    </script>
+
+</body>
+</html>

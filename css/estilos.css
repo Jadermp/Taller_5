@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+}
+
+
+.flexContendor{
+    display: flex;
+}
+
+/* 630 px el tamaño de la pantalla -----> 195px = 31% ----> 69% = 435 px */
+
+/* Arriba */
+.divFlexContenedorArriba{
+    height: 31%; 
+    width: 100%;
+}
+
+.divUnoDosTresCuatro{
+    width: 25%;
+}
+
+.imgArriba{
+    height: 100%;
+    width: 100%;
+}
+
+/* Abajo */
+.divFlexContenedorAbajo{
+    height: 69%;
+    width: 100%;
+}
+
+.divCincoSiete{
+    width: 25%;
+    height: 450px;
+    background-color: black;
+    text-align: center;
+}
+
+.divSeis{
+    width: 50%;
+    height: 450px;
+}
+
+.divOcho{
+    width: 100%;
+    height: 70%;
+}
+
+.divNueve{
+    width: 100%;
+    height: 30%;
+}
+
+.imgCinco{
+    width: 100%;
+    height: 100%;
+}
+
+.imgOcho{
+    width: 100%;
+    height: 100%;
+}
+
+.imgNueve{
+    width: 100%;
+    height: 100%;
+}
+
+.divCincoSiete input{
+    margin-bottom: 20px;
+    background-color: black;
+    border: 1px solid gray;
+}
+
+.divCincoSiete h2{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.divCincoSiete textarea{
+    height: 100px;
+    background-color: black;
+    border: 1px solid gray;
+}
+
+.divCincoSiete button{
+    margin-top: 10px;
+    display: block;
+    margin-left: 60%;
+}
